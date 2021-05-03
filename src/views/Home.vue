@@ -1,9 +1,17 @@
 <template>
   <div class="home">
     <v-row>
-      <v-col cols="12" md="6" offset="1" class="lighten-5" id="front-text">
-        <h3 class="text-right">God eftermiddag!</h3>
-        <h4 class="text-right">Tag et kig rundt og se om du finder noget du kan lide</h4>      
+      <v-col cols="12"  class="lighten-5" id="front-text">
+        <div class="home-text-container">
+          <h3 class="text-right">God eftermiddag!</h3>
+          <h4 class="text-right">Tag et kig rundt og se om du finder noget du kan lide</h4>    
+        </div>
+        <div class="home-image-self">
+          <img src="../assets/logo.png" alt="">
+        </div>
+        <div class="outline-box">
+          
+        </div>  
         </v-col>
     </v-row>
 
@@ -29,6 +37,33 @@ h4 {
   font-style: normal; 
   color: #3A3A3A;
 }
+#front-text {
+  display: flex;
+  flex-wrap: wrap;
+  position:relative;
+}
+.home-text-container {
+  width: 50%;
+  margin:0 0 0 40px;
+  z-index: 33;
+     position: relative;
+}
+
+.home-image-self {
+  width: 50%;
+  margin: 0 0 0 -50px;
+   z-index: 3;
+   position: relative;
+}
+
+.outline-box{
+  border: #333333 4px solid;
+  width:50%;
+  height:50%;
+  position: relative;
+  margin:-100px 0 0 50px;
+}
+
 
 </style>
 
