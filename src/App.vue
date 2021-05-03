@@ -13,16 +13,22 @@
       <router-link to="/kontakt">Kontakt</router-link>
       </div>
     </header>
+     <v-main>
+     <v-container  fluid>
     <router-view>
     </router-view>
-    <v-main>
-      <HelloWorld/>
+     </v-container>
+   
+
     </v-main>
   </v-app>
 </template>
 
 <style scoped lang="scss">
 
+#app{
+  background-color: #FCFCFC;
+}
 header {
   margin-right: 30px;
   margin-top: 30px;
@@ -46,7 +52,7 @@ header {
 </style>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+/* import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
@@ -58,5 +64,5 @@ export default {
   data: () => ({
     //
   }),
-};
+}; */
 </script>
