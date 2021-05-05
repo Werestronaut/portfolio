@@ -3,11 +3,12 @@
     <v-row>
       <v-col cols="12"  class="lighten-5" id="front-text">
         <div class="home-text-container">
-          <h3 class="text-right">God eftermiddag!</h3>
+          <h3 class="text-right">{{dato}}</h3>
+         
           <h4 class="text-right">Tag et kig rundt og se om du finder noget du kan lide</h4>    
         </div>
         <div class="home-image-self">
-          <img src="../assets/logo.png" alt="">
+          <img src="../assets/sky.jpg" alt="">
         </div>
         <div class="outline-box">
           
@@ -19,7 +20,13 @@
 </template>
 
 <style lang="scss" scoped>
-
+.container {
+  padding:0 !important;
+}
+.home{
+  height: calc(100vh - 9em);
+  overflow: hidden;
+}
 h3 {
   font-size: 420%;
   line-height: 110%;
@@ -44,13 +51,14 @@ h4 {
 }
 .home-text-container {
   width: 50%;
-  margin:0 0 0 40px;
+  margin: 2em 0 0 50px;
   z-index: 33;
      position: relative;
 }
 
 .home-image-self {
   width: 50%;
+  height: 30%;
   margin: 0 0 0 -50px;
    z-index: 3;
    position: relative;
@@ -59,14 +67,47 @@ h4 {
 .outline-box{
   border: #333333 4px solid;
   width:50%;
-  height:50%;
+  height:40%;
   position: relative;
-  margin:-100px 0 0 50px;
+  margin:-70px 0 0 200px;
+  z-index: 1000;
 }
 
 
 </style>
 
 <script>
+export default {
 
+  data() {
+    return {
+      dato: null
+    }
+  },
+
+  mounted() {
+
+      this.dato = `${new Date()}`;
+      this.dato = this.dato.split(" ")[4].split(":")[0]
+
+
+      if(this.dato < 6){
+        this.dato = "God morgen!"
+         
+      }else if(this.dato > 12){
+         this.dato = "God middag!"
+      }else if(this.dato > 14){
+      this.dato = "God eftermiddag!"
+      }else if(this.dato >= 18){
+         this.dato = "God aften!"
+      }else{
+        this.dato = "God nat!"
+      } 
+    //console.log(this.date)
+      
+      }
+    
+   
+  
+}
 </script>

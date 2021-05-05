@@ -4,7 +4,7 @@
     <header>
       <figure>
         <router-link to="/">
-          <img src="./assets/logo.svg" alt="logo" style="width:300px; height:100px;">
+          <img src="./assets/hvidt_logo.svg" alt="logo" style="width:300px; height:100px;">
         </router-link>
       </figure>
       <div>
@@ -14,7 +14,7 @@
       </div>
     </header>
      <v-main>
-     <v-container  fluid>
+     <v-container id="dadum" fluid>
     <router-view>
     </router-view>
      </v-container>
@@ -23,15 +23,23 @@
     </v-main>
   </v-app>
 </template>
+<style>
+  .container, .container--fluid {
+  padding:0 !important;
 
+}
+
+</style>
 <style scoped lang="scss">
 
 #app{
   background-color: #FCFCFC;
 }
 header {
-  margin-right: 30px;
-  margin-top: 30px;
+  margin-bottom: 3em;
+  height: 6em;
+  padding-right: 30px;
+  padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,6 +56,7 @@ header {
     text-decoration: none;
   }
 }
+
 
 </style>
 
