@@ -1,22 +1,22 @@
 <template>
   <div class="kontakt">
     <v-container class="kontakt-container">
-    <v-row class="kontakt-content" align="center" justify="center">
-      <v-col cols="12">
+    <v-row class="kontakt-content" >
+      <v-col cols="6" align="center" justify="center">
       <div class="kontakt-text">
         <h1>Lad os komme i kontakt</h1>
       </div>
       </v-col>
 
-      <v-col cols="12">
+      <v-col cols="12" align="center" justify="center">
       <div class="outline-box">
 
         <div class="info-box">
           <h2>E-mail</h2>
           <a href="mailto:markus@hvidt.nu?subject=%F0%9F%91%8B%20Markus%20!%20">markus@hvidt.nu</a>
         </div>
-        <div class="linkedin-box" href="linkedin.com">
-          <img src="../assets/linkedin.svg" alt="logo" style="width:60px; height:60px;" href="linkedin.com">
+        <div class="linkedin-box" href="https://www.linkedin.com/in/markus-hvidt-pedersen-01a85b205">
+         <a href="https://www.linkedin.com/in/markus-hvidt-pedersen-01a85b205" style="width:60px; height:60px;" class="fab fa-linkedin fa-6x"></a>
         </div>
       </div>
       </v-col>
@@ -27,15 +27,9 @@
 
 <style lang="scss" scoped>
 
-.kontakt-container{
- // display: flex;
- // align-items: center;
- // height: 50vh;
-}
-
 .kontakt-content{
-  //display: flex;
-  //justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .kontakt-text{
@@ -99,5 +93,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  a{
+    color:#333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
 }
 </style>

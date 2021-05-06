@@ -32,9 +32,6 @@
 </style>
 <style scoped lang="scss">
 
-#app{
-  background-color: #FCFCFC;
-}
 header {
   margin-bottom: 3em;
   height: 6em;

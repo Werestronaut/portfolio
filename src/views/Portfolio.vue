@@ -1,7 +1,14 @@
 <template>
+
+
   <div class="portfolio">
-    <h1>portfolio</h1>
+    <v-container>
+      <v-row>
+      <v-col offset="1">
     <PortFrame />
+      </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 

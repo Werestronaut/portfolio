@@ -1,11 +1,12 @@
 <template>
   <div class="om-mig">
-     <v-row>
+     <v-row class="row">
       <v-col cols="12" md="4" offset="1">
         <div class="frame-clouds">
           <img src="../assets/sky_about.jpg" alt="">
           <div class="frame-outline">
             <div class="frame-self"></div>
+            <img src="../assets/Port_sitting.png" width="748" height="950" alt="">
           </div>
         </div>
         </v-col>
@@ -38,9 +39,6 @@ produces no resultant pleasure?</p>
         <v-card-text>
            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
         </v-card-text>
-
-        <v-divider></v-divider>
-
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
@@ -53,7 +51,6 @@ produces no resultant pleasure?</p>
         </v-card-actions>
       </v-card>
     </v-dialog>
-      <div class="line"> </div>
   </div>
         </div>
         </v-col>
@@ -111,13 +108,22 @@ margin-bottom: 5vh;
     height: 100%;
     top: 15px;
     left: 15px;
+      .frame-self{
+      position: absolute;
+      left: 0vw;
+      top: 0vh;
+    }
+    img{
+      transform: translate(-19%, 3%);
+    }
   }
+
 }
 
-.line {
-  background-color: #333333;
-  height: 5px;
-  width: 40em;
+.row {
+  overflow: hidden;
+  padding-bottom: 11.7vh;
+  
 }
 </style>
 
