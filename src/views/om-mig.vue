@@ -81,7 +81,7 @@ produces no resultant pleasure?</p>
 .desc-text {
   width: 50vw;
   h3{
-    font-size: 300%;
+  font-size: 300%;
   line-height: 110%;
   font-family: halyard-display,sans-serif;
   font-weight: 600;

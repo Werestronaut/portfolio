@@ -91,7 +91,7 @@ export default {
       this.dato = this.dato.split(" ")[4].split(":")[0]
 
 
-      if(this.dato < 6){
+      if(this.dato > 6){
         this.dato = "God morgen!"
          
       }else if(this.dato > 12){
