@@ -67,11 +67,14 @@ export default {
                  {
                     id:2,
                     projectTitle: "Polaroid Sign-up",
-                    projectContext: "ProjectDesc",
+                    projectContext: "Jeg fik en assigment hvor jeg skulle lave en sign-up screen til en app.",
                     projectThumb: require("../assets/thumbnails/thumb-small-polaroid.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-polaroid.jpg"),
-                    projectLosning:"" ,
-                    projectResultat:"" ,
+                    projectLosning:"Mit koncept var at lave et sign-up screen til en photo gallery app, så som Instagram, men at det skulle være i stil af gamle polaroids hvor man ikke kunne redigere dem. Ud over selve konceptet, så har flowet på opsætningen også sat op med standarden for sign up screens, for at minimere irritationer for brugerens flow." ,
+                    projectLosTit: "Polaroid:" ,
+                    projectLos2: "Øverst er den en polaroid, som skifter imellem forskellige billeder der er blevet taget af brugerbasen." ,
+                    projectLosTit2: "Sign-up knap:" ,
+                    projectLos3: "Nederst på siden er sign-up knappen, der er blevet lavet efter en gammeldags polaroid kamera. Dette ville skabe noget brand identitet, samt vil give en sjov detalje for dem der havde en af deres gamle kameraer." ,
                 },
                 {
                     id:3,
@@ -91,10 +94,14 @@ export default {
                 {
                     id:4,
                     projectTitle: "Allinkpop Ad",
-                    projectContext: "ProjectDesc",
+                    projectContext: "Jeg fik en assignment, hvor vi skulle designe en reklame af et produkt eller virksomhed. Udover dette, skulle vi også finde ud af hvor det bedst ville give mening at kører reklamen.",
                     projectThumb: require("../assets/thumbnails/thumb-small-aik.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-aik.jpg"),
-                    projectLosning:"" ,
+                    projectLosning:"Jeg valgte at lave en reklame for butikken ved navn ”AllinKpop”, som er en butik fra København der specialisere sig i kpop albums og merchandise." ,
+                    projectLosTit: "Platform:" ,
+                    projectLos2: "Den typiske kpop-fan er typisk hørt af unge og siden de fleste unge bruger mere instagram, giver det mening at tage til denne platform." ,
+                    projectLosTit2: "Film stil:" ,
+                    projectLos3: "Jeg valgte at gøre det meget simpelt og til pointen. For at sikre at de fleste som er til kpop der bare scroller igennem deres feed vil lægge mærke til det, så havde jeg valgt at vise frem nogle albums, for at skabe et godt førstehånds indtryk. Derefter viser jeg forskellige mængder af album covers, for at vise hvor mange forskellige grupper de egentligt har. For at gøre det endnu mere personligt for seeren, anvender jeg nogle forskellige kpop gruppers fandom navne for at vise noget autenticitet fra steder, så man ved butikken ved noget om kpop kulturen.",
                     projectResultatText: "3. Resultat",
                     projectResultat:"Se det endelige resultat her: https://www.youtube.com/watch?v=aq83xs8094w" ,
                 },
@@ -132,6 +139,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.portframe{
+    display: flex;
+    justify-content: center;
+}
 .blue-box{
     background-color: #50a4ff;
     width: 500px;
