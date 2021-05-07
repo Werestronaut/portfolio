@@ -187,7 +187,7 @@ export default {
    
     top: -2em;
     left: -2em;
-    opacity: 80%;
+    opacity: 0.8;
     transition: 300ms;
 
 
