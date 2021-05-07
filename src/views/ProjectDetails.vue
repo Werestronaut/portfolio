@@ -79,7 +79,7 @@ export default {
         projectContext: project.projectContext,
         projectCover: project.projectCover,
         projectThumb: project.projectThumb,
-        projectLøsning: project.projectLosning,
+        projectLosning: project.projectLosning,
         projectResultat: project.projectResultat,
         projectLosTit: project.projectLosTit,
         projectLos2: project.projectLos2,

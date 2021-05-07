@@ -11,7 +11,7 @@
                 projectContext: project.projectContext,
                 projectCover: project.projectCover,
                 projectThumb: project.projectThumb,
-                projectLøsning: project.projectLosning,
+                projectLosning: project.projectLosning,
                 projectResultat: project.projectResultat,
                 projectLosTit: project.projectLosTit,
                 projectLos2: project.projectLos2,
@@ -126,11 +126,11 @@ export default {
                 {
                     id:7,
                     projectTitle: "Comet Magazine",
-                    projectContext: "ProjectDesc",
+                    projectContext: "Jeg satte mig ud for at lave et logo til et modeblad, der har et navn med rumtema.",
                     projectThumb: require("../assets/thumbnails/thumb-small-comet.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-comet.jpg"),
-                    projectLosning:"" ,
-                    projectResultat:"" ,
+                    projectLosning: "Processen startede ud med at brainstorme navne, hvilket ende op med at lande på ”Comet”, da jeg kom i tanke på at O’et lignede en komet. Dette ender også op med at blive highlightet af designet og giver logoet et stort statement. " ,
+                    projectLos2: "Jeg valgte at gå med en serif font, da det både er en klassiker for det moderelaterede markedet, men giver designet en sofistiskhed og hjælper at grounde designet." ,
                 }
             ]
         }
