@@ -159,7 +159,7 @@ export default {
         color: #3A3A3A;
         position: absolute;
         transform: rotate(-90deg);
-        opacity: 80%;
+        opacity: 0.8;
          
         
         right: -100px;
@@ -169,7 +169,7 @@ export default {
 
 .portframe:hover{
 .image-box {
-    opacity: 100%;
+    opacity: 1;
 
     i {
         right: -2vh;
