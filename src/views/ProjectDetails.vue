@@ -17,12 +17,38 @@
           <div class="project-top">
             <div class="image-frame">
               <div class="image-box">
-                <h3>Titel</h3>
+                
+                <h3>{{project.projectTitle}}</h3>
+         
+       
+              <v-img :src="project.projectCover" alt="" />
               </div>
             </div>
           </div>
         </v-col>
-    </v-row>
+      </v-row>
+    </v-container>
+    <v-container>
+      <v-row justify="center" class="port-content">
+        <v-col sm="6" md="8" lg="12">
+        <div>
+          <h2>1. Context & Problem statement</h2>
+           <h3>{{project.projectContext}}</h3>
+        </div>
+        </v-col>
+        <v-col sm="6" md="8" lg="12">
+        <div>
+          <h2>2. Løsning</h2>
+           <h3>{{ProjectLosning}}</h3>
+        </div>
+        </v-col>
+        <v-col sm="6" md="8" lg="12">
+        <div>
+          <h2>3. Resultat</h2>
+           <h3>{{ProjectResultat}}</h3>
+        </div>
+        </v-col>
+      </v-row>
   </v-container>
 
 
@@ -32,7 +58,21 @@
 
 <script>
 export default {
-
+  
+  data() {
+    var project = this.$route.params
+    return {
+      project: {
+        id: project.id,
+        projectTitle: project.projectTitle,
+        projectContext: project.projectContext,
+        projectCover: project.projectCover,
+        projectThumb: project.projectThumb,
+        projectLøsning: project.projectLosning,
+        projectResultat: project.projectResultat,
+      }
+    }
+  },
 }
 </script>
 
@@ -56,6 +96,7 @@ export default {
   transition: 300ms;
   right: 0em;
   position:relative;
+  margin-bottom: 30px;
   i{
     transform: rotate(90deg);
     color: #3A3A3A;
@@ -93,7 +134,7 @@ export default {
   height:400px;
 
   .image-box{
-    background-color: red;
+    /*background-image: ;*/
     width: 100%;
     height: 100%;
     position: relative;
@@ -102,20 +143,32 @@ export default {
 
     h3{
     font-size: 300%;
-    line-height: 110%;
+    line-height: 80%;
     font-family: halyard-display,sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #3A3A3A;
     position: absolute;
-    top: 40vh;
-    right: 19vw;
-    width: 50vh; 
-    line-height: 80%;
+    text-align: left;
+    top: 36vh;
+    left: 2vw;
+    width: 62vh; 
+    z-index: 100;
     }
   }
 }
 
+.port-content {
+  margin-top: 30px;
+  h3{
+    font-family: halyard-display, sans-serif; 
+    font-weight: 300; 
+    font-size: 120%;
+    font-style: normal; 
+    text-align: justify;
+    color: #3A3A3A;
+  }
+}
 
 
 </style>

@@ -113,7 +113,7 @@ margin-bottom: 5vh;
     }
     img{
       transform: translate(-19%, 3%);
-      width: 44.49732302201071vw;  /* 748px */
+      width: 38.49732302201071vw;  /* 748px */
       height: 110.98130841121495vh; /*950px*/
     }
   }

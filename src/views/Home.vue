@@ -91,14 +91,14 @@ export default {
       this.dato = this.dato.split(" ")[4].split(":")[0]
 
 
-      if(this.dato < 6){
+      if(this.dato > 6){
         this.dato = "God morgen!"
          
-      }else if(this.dato < 12){
+      }else if(this.dato > 12){
          this.dato = "God middag!"
-      }else if(this.dato < 14){
+      }else if(this.dato > 14){
       this.dato = "God eftermiddag!"
-      }else if(this.dato <= 18){
+      }else if(this.dato >= 18){
          this.dato = "God aften!"
       }else{
         this.dato = "God nat!"
