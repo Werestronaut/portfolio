@@ -3,7 +3,7 @@
 <div class="portframe" v-for="project in projects" :key="project.id">
     <div class="blue-box">
         <div class="image-box">
-              <v-img :src="project.projectThumb" alt="" style="text-decoration: none;"/>
+              <v-img :src="project.projectThumb" alt="" />
             <h2>   
                 <router-link id="" :to="{name: 'ProjectDetails', params: {
                 id: project.id,
@@ -13,6 +13,13 @@
                 projectThumb: project.projectThumb,
                 projectLøsning: project.projectLosning,
                 projectResultat: project.projectResultat,
+                projectLosTit: project.projectLosTit,
+                projectLos2: project.projectLos2,
+                projectLosTit2: project.projectLosTit2,
+                projectLos3: project.projectLos3,
+                projectResultatText: project.projectResultatText,
+                projectResultatImg: project.projectResultatImg,
+                projectResultatImg2: project.projectResultatImg2,
                 }}">
                 {{project.projectTitle}}
             </router-link></h2>
@@ -52,64 +59,71 @@ export default {
                     id:1,
                     projectTitle: "7-Kanten Spil",
                     projectContext: "ProjectDesc" ,
-                    ProjectThumb: require("../assets/thumbnails/thumb-small-7k.jpg"),
+                    projectThumb: require("../assets/thumbnails/thumb-small-7k.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-7k.jpg"),
-                    ProjectLosning: "",
-                    ProjectResultat: "",
+                    projectLosning: "",
+                    projectResultat: "",
                 },
                  {
                     id:2,
                     projectTitle: "Polaroid Sign-up",
                     projectContext: "ProjectDesc",
-                    ProjectThumb: require("../assets/thumbnails/thumb-small-polaroid.jpg"),
+                    projectThumb: require("../assets/thumbnails/thumb-small-polaroid.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-polaroid.jpg"),
-                    ProjectLosning:"" ,
-                    ProjectResultat:"" ,
+                    projectLosning:"" ,
+                    projectResultat:"" ,
                 },
                 {
                     id:3,
                     projectTitle: "Adastra Merch Koncept",
                     projectContext: "Efter at have færdiggjort at læse Adastra, fik jeg inspirationen til at lave et merchandise koncept for spillet. Deres nuværende merchandise for spillet passer godt til målgruppen, men for folk som er mere fashion orienteret eller vil være mere ”low-key” med deres support kunne godt dækkes.",
-                    ProjectThumb: require("../assets/thumbnails/thumb-small-adastra.jpg"),
+                    projectThumb: require("../assets/thumbnails/thumb-small-adastra.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-adastra.jpg"),
-                    ProjectLosning:"",
-                    ProjectResultat:"" ,  
+                    projectLosning:"Designet er inspireret af 90’s sweatshirt design, samt en illustration fra spillets artist, Haps, hvor en af spillets hovedpersoner Amicus har et outfit inspireret af samme tidsperiode.",
+                    projectLosTit: "Front design:" ,
+                    projectLos2: "Pil-tegnet er taget fra den imperial families pande symbol. ”Gud wolf” kommer fra den tidligere nævnte illustration, hvor det står på den jakke Amicus har på. " ,
+                    projectLosTit2: "Ryg Design:" ,
+                    projectLos3: "Citatet er fra en politisktale som Amicus holde i spillet. Her har jeg forsøgt at holde stort fokus på ”Beyond”, da dette er hvad Amicus tilføjer på citatet fra en tidligere kongelig. Dette har jeg gjort ved at gøre ordet større end de andre." ,
+                    projectResultatText: "3. Resultat",
+                    projectResultatImg:require("../assets/AdastraFB.svg"), 
+                    projectResultatImg2:require("../assets/AdastraBB.svg"), 
                 },
                 {
                     id:4,
                     projectTitle: "Allinkpop Ad",
                     projectContext: "ProjectDesc",
-                    ProjectThumb: require("../assets/thumbnails/thumb-small-aik.jpg"),
+                    projectThumb: require("../assets/thumbnails/thumb-small-aik.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-aik.jpg"),
-                    ProjectLosning:"" ,
-                    ProjectResultat:"" ,
+                    projectLosning:"" ,
+                    projectResultatText: "3. Resultat",
+                    projectResultat:"Se det endelige resultat her: https://www.youtube.com/watch?v=aq83xs8094w" ,
                 },
                 {
                     id:5,
                     projectTitle: "EASV Studerende Subpage",
                     projectContext: "ProjectDesc",
-                    ProjectThumb: require("../assets/thumbnails/thumb-small-easv.jpg"),
+                    projectThumb: require("../assets/thumbnails/thumb-small-easv.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-easv.jpg"),
-                    ProjectLosning:"" ,
-                    ProjectResultat:"" ,
+                    projectLosning:"" ,
+                    projectResultat:"" ,
                 },
                 {
                     id:6,
                     projectTitle: "Idea House Logo",
-                    projectContext: "ProjectDesc",
-                    ProjectThumb: require("../assets/thumbnails/thumb-small-ih.jpg"),
+                    projectContext: "Jeg fik som opgave at lave et logo for EASV’s afdeling ’Idea House’, som havde et forældet logo. De ville gerne have, at Idea House’s nye identitet skulle bygge sig op af EASV’s, for at vise de hører sammen.",
+                    projectThumb: require("../assets/thumbnails/thumb-small-ih.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-ih.jpg"),
-                    ProjectLosning:"" ,
-                    ProjectResultat:"" ,
+                    projectLosning:"Jeg fik som opgave at lave et logo for EASV’s afdeling ’Idea House’, som havde et forældet logo. De ville gerne have, at Idea House’s nye identitet skulle bygge sig op af EASV’s, for at vise de hører sammen." ,
+                    projectLos2: "Typografien har jeg valgt også at kører meget simpel, for ikke at tage for meget væk fra selve logoet. Derfor valgte jeg ’Coolvetica’ som er en sans serif font, der både giver en moderne sjæl til designet, men også giver det noget robust intelligens. ",
                 },
                 {
                     id:7,
                     projectTitle: "Comet Magazine",
                     projectContext: "ProjectDesc",
-                    ProjectThumb: require("../assets/thumbnails/thumb-small-comet.jpg"),
+                    projectThumb: require("../assets/thumbnails/thumb-small-comet.jpg"),
                     projectCover: require("../assets/thumbnails/thumb-big-comet.jpg"),
-                    ProjectLosning:"" ,
-                    ProjectResultat:"" ,
+                    projectLosning:"" ,
+                    projectResultat:"" ,
                 }
             ]
         }
@@ -173,19 +187,25 @@ h2{
     font-weight: 600;
     font-style: normal;
      z-index:500034;
-    color: #3A3A3A;
-    position: absolute;
-    top: 48vh;
-    width: 50vh; 
+    
+    position: relative;
+    
     line-height: 80%;
-
+    a {
+    position: relative;
+    bottom: 10vh;
+    left: 3vw;
+    width: 0vh; 
+        color: #3A3A3A;
+        text-decoration: none;
+    }
 }
 
 }
 
 .frame-box{
     border: #333333 4px solid;
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: -2em;

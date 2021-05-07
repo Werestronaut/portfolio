@@ -20,7 +20,7 @@
                 
                 <h3>{{project.projectTitle}}</h3>
          
-       
+      
               <v-img :src="project.projectCover" alt="" />
               </div>
             </div>
@@ -34,18 +34,29 @@
         <div>
           <h2>1. Context & Problem statement</h2>
            <h3>{{project.projectContext}}</h3>
+           
         </div>
         </v-col>
         <v-col sm="6" md="8" lg="12">
         <div>
           <h2>2. Løsning</h2>
-           <h3>{{ProjectLosning}}</h3>
+           <h3>{{project.projectLosning}}</h3>
+            <h4>{{project.projectLosTit}}</h4>
+            <h3>{{project.projectLos2}}</h3>
+            <h4>{{project.projectLosTit2}}</h4>
+            <h3>{{project.projectLos3}}</h3>
+
         </div>
         </v-col>
         <v-col sm="6" md="8" lg="12">
         <div>
-          <h2>3. Resultat</h2>
-           <h3>{{ProjectResultat}}</h3>
+          <h2>{{project.projectResultatText}}</h2>
+           <h3>{{project.projectResultat}}</h3>
+
+           <div class="ResultImg">
+           <v-img :src="project.projectResultatImg" alt="" max-width="15.2%" height="auto"/>
+           <v-img :src="project.projectResultatImg2" alt="" max-width="36.5%" height="auto"/>
+           </div>
         </div>
         </v-col>
       </v-row>
@@ -70,6 +81,13 @@ export default {
         projectThumb: project.projectThumb,
         projectLøsning: project.projectLosning,
         projectResultat: project.projectResultat,
+        projectLosTit: project.projectLosTit,
+        projectLos2: project.projectLos2,
+        projectLosTit2: project.projectLosTit2,
+        projectLos3: project.projectLos3,
+        projextResultatText: project.projectResultatText,
+        projectResultatImg: project.projectResultatImg,
+        projectResultatImg2: project.projectResultatImg2,
       }
     }
   },
@@ -167,6 +185,23 @@ export default {
     font-style: normal; 
     text-align: justify;
     color: #3A3A3A;
+  }
+
+  h4 {
+    font-family: halyard-display, sans-serif; 
+    font-weight: 600; 
+    font-size: 120%;
+    font-style: normal; 
+    text-align: justify;
+    color: #3A3A3A;
+    margin-top: 10px;
+  }
+
+  .ResultImg{
+    margin-top: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
