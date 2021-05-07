@@ -1,27 +1,21 @@
 <template>
   <div class="om-mig">
      <v-row class="row">
-      <v-col cols="12" md="4" offset="1">
+      <v-col cols="6" md="4" sm="1" offset="1">
         <div class="frame-clouds">
           <img src="../assets/sky_about.jpg" alt="">
           <div class="frame-outline">
             <div class="frame-self"></div>
-            <img src="../assets/Port_sitting.png" width="748" height="950" alt="">
+            <img src="../assets/Port_sitting.png" alt="">
           </div>
         </div>
         </v-col>
-      <v-col  cols="12" sm="5" md="7">
+      <v-col  cols="4" md="2" sm="9" >
         <div class="desc-text">
           <h3>Halløj, jeg hedder Markus</h3>
-          <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you 
-a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-
-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those 
-who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is 
-there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally 
-circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us 
-ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault 
-with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that 
-produces no resultant pleasure?</p>
+          <p>Jeg er en 23-årig multimediedesigner der studere på EASV i Esbjerg, med passion og erfaring indenfor UX/UI-design og videoproduktion, da evnen til at skabe et detaljeret produkt falder mig naturligt.
+                UX er en vigtig del af min design proces, da design ikke bare er noget der skal se godt ud, men skal fylde et formål.</p>
+              <p>Jeg er en meget rolig og inkluderende person, der arbejder meget struktureret om det så skulle være gruppe eller solo arbejde.</p>
         </div>
 
         <div class="desc-bar">
@@ -76,7 +70,7 @@ produces no resultant pleasure?</p>
 } */
 
 .desc-text {
-  width: 50vw;
+  width: 48vw;
   h3{
   font-size: 300%;
   line-height: 110%;
@@ -99,8 +93,12 @@ margin-bottom: 5vh;
 
 .frame-clouds{
   position: relative;
-  width:468px;
-  height:600px;
+  width:27.840571088637716vw; /* 468px */
+  height:70.09345794392523vh; /* 600px */
+  img{
+    width:27.840571088637716vw;
+  height:70.09345794392523vh;
+  }
   .frame-outline{
     border: #333333 4px solid;
     position: absolute;
@@ -115,6 +113,8 @@ margin-bottom: 5vh;
     }
     img{
       transform: translate(-19%, 3%);
+      width: 44.49732302201071vw;  /* 748px */
+      height: 110.98130841121495vh; /*950px*/
     }
   }
 

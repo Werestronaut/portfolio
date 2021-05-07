@@ -34,7 +34,7 @@
 
 .kontakt-text{
   h1{
-    font-size: 300%;
+    font-size: 2.5em;
     //line-height: 110%;
     font-family: halyard-display,sans-serif;
     font-weight: 600;
@@ -58,7 +58,7 @@
   justify-content: center;
 
   h2{
-    font-size: 200%;
+    font-size: 2em;
     line-height: 110%;
     font-family: halyard-display,sans-serif;
     font-weight: 600;
@@ -67,12 +67,17 @@
     margin-bottom: 2vh;
   }
 
+  a:hover{
+     color: #50a4ff;
+
+  }
   a{
     font-family: halyard-display, sans-serif; 
     font-weight: 300; 
     font-size: 150%;
     font-style: normal; 
     color: #3A3A3A;
+    transition: 200ms;
   }
 }
 
@@ -94,12 +99,18 @@
   align-items: center;
   justify-content: center;
 
+  a:hover{
+    color: #50a4ff;
+  }
+
   a{
     color:#333333;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    transition: 200ms;
   }
+  
 }
 </style>

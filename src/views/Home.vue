@@ -1,14 +1,14 @@
 <template>
   <div class="home">
     <v-row>
-      <v-col cols="12"  class="lighten-5" id="front-text">
+      <v-col cols="12" md="" xs=""  class="lighten-5" id="front-text">
         <div class="home-text-container">
           <h3 class="text-right">{{dato}}</h3>
          
           <h4 class="text-right">Tag et kig rundt og se om du finder noget du kan lide</h4>    
         </div>
-        <div class="home-image-self">
-          <img src="../assets/sky.jpg" alt="">
+        <div class="home-image">
+          <img src="../assets/sky_front.jpg" alt="">
         </div>
         <div class="outline-box">
           
@@ -56,7 +56,7 @@ h4 {
      position: relative;
 }
 
-.home-image-self {
+.home-image {
   width: 50%;
   height: 30%;
   margin: 0 0 0 -50px;
@@ -91,14 +91,14 @@ export default {
       this.dato = this.dato.split(" ")[4].split(":")[0]
 
 
-      if(this.dato > 6){
+      if(this.dato < 6){
         this.dato = "God morgen!"
          
-      }else if(this.dato > 12){
+      }else if(this.dato < 12){
          this.dato = "God middag!"
-      }else if(this.dato > 14){
+      }else if(this.dato < 14){
       this.dato = "God eftermiddag!"
-      }else if(this.dato >= 18){
+      }else if(this.dato <= 18){
          this.dato = "God aften!"
       }else{
         this.dato = "God nat!"

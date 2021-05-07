@@ -4,7 +4,7 @@
     <header>
       <figure>
         <router-link to="/">
-          <img src="./assets/hvidt_logo.svg" alt="logo" style="width:300px; height:100px;">
+          <img src="./assets/hvidt_logo.svg" alt="logo" style="">
         </router-link>
       </figure>
       <div>
@@ -32,18 +32,23 @@
 </style>
 <style scoped lang="scss">
 
+img {
+width: 17.84651992861392vw;
+height:11.682242990654206vh;
+}
+
 header {
   margin-bottom: 3em;
   height: 6em;
-  padding-right: 30px;
-  padding-top: 30px;
+  padding-right: 1.784651992861392vw;
+  padding-top: 1.784651992861392vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   a{
-    margin-right: 30px;
+    margin-right: 1.784651992861392vw;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 125%;
     color: #707070;
     text-decoration: none;
     transition: 200ms;

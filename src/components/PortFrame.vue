@@ -58,14 +58,16 @@
 
 
 h2{
-    font-size: 400%;
+    font-size: 300%;
     line-height: 110%;
     font-family: halyard-display,sans-serif;
     font-weight: 600;
     font-style: normal;
     color: #3A3A3A;
     position: absolute;
-    top: 54vh;
+    top: 48vh;
+    width: 50vh; 
+    line-height: 80%;
 }
 
 }
